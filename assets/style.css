@@ -330,3 +330,101 @@ img{ max-width:100%; display:block; }
     scroll-snap-align: initial !important;
   }
 }
+/* =========================================
+   TOP〜OpenChat 見やすさ改善（上書き）
+   ※ catalog（サービス一覧）は触らない
+========================================= */
+
+/* 背景の主張を弱めて、文字を読みやすく */
+body{
+  background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 55%, #ffffff 100%) !important;
+}
+
+/* ヘッダーを“白いカード”にして視認性UP */
+.site-header{
+  padding: 18px 16px 14px !important;
+}
+.site-header-inner{
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px 14px;
+  box-shadow: 0 10px 26px rgba(15,23,42,.06);
+}
+
+/* ブランド行の見やすさ */
+.brand-logo{
+  box-shadow: 0 8px 18px rgba(37,99,235,.12) !important;
+}
+.brand-title{
+  font-size: 22px !important;
+}
+.site-lead{
+  margin-top: 10px !important;
+  color: #4b5563 !important;
+  font-size: 14px !important;
+}
+
+/* カテゴリナビ：押しやすく、横スクロールで見やすく */
+.category-nav{
+  margin-top: 12px !important;
+}
+.category-nav-inner{
+  display: flex !important;
+  gap: 10px !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  padding: 6px 2px !important;
+  -webkit-overflow-scrolling: touch;
+}
+.category-nav-item{
+  white-space: nowrap;
+  padding: 10px 12px !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(37,99,235,.20) !important;
+  box-shadow: 0 6px 14px rgba(37,99,235,.10);
+  font-size: 12px !important;
+}
+
+/* CTA（LINE / OpenChat）：カードの視認性UP */
+.cta-row{
+  margin-top: 14px !important;
+}
+.cta-card{
+  background: #ffffff !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 26px rgba(15,23,42,.06) !important;
+}
+.cta-title{
+  font-size: 15px !important;
+}
+.cta-sub{
+  color: #4b5563 !important;
+}
+
+/* pill（内容）を少し濃くして読みやすく */
+.pill{
+  background: #eef2ff !important;
+  border: 1px solid rgba(37,99,235,.18) !important;
+  color: #1d4ed8 !important;
+}
+
+/* ボタンを“押したくなる”サイズに */
+.btn{
+  padding: 11px 14px !important;
+  font-size: 13px !important;
+}
+.btn-line{
+  box-shadow: 0 14px 26px rgba(6,199,85,.22) !important;
+}
+.btn-primary{
+  box-shadow: 0 14px 26px rgba(37,99,235,.20) !important;
+}
+
+/* CTA内のボタンを幅広に（スマホで押しやすい） */
+.cta-card .btn{
+  width: 100%;
+  max-width: 360px;
+}投げますかあのあれすかあ僕ですか
