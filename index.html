@@ -3,132 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BCC｜美容師のためのインフラ整備サービス</title>
-  <meta name="description" content="BCC（Beauty Cooperative Chain）は、美容師・美容室の開業、集客、教育、経営を支えるインフラ整備サービスです。">
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #222;
-      background: #f7f7f9;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px 16px 60px;
-    }
-
-    .title {
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .subtitle {
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 32px;
-    }
-
-    .image-box {
-      width: 100%;
-      height: 260px;
-      background: #e5e7eb;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 32px;
-      font-size: 14px;
-      color: #777;
-    }
-
-    .description {
-      font-size: 16px;
-      line-height: 1.9;
-      margin-bottom: 32px;
-    }
-
-    .description ul {
-      padding-left: 20px;
-      margin-top: 12px;
-    }
-
-    .description li {
-      margin-bottom: 8px;
-    }
-
-    .cta {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 14px 28px;
-      background: #2563eb;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 999px;
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    .cta a:hover {
-      opacity: 0.9;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-      margin-top: 60px;
-    }
-  </style>
+  <title>BCC｜美容師のインフラ整備サービス</title>
+  <link rel="stylesheet" href="assets/style.css?v=1">
+  <meta name="description" content="BCC（beauty Cooperative Chain）は、美容師の開業・集客・運営を支えるインフラ整備サービスです。">
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <img src="assets/bcc-logo.png" alt="BCC ロゴ" class="brand-logo">
+        <div class="brand-text">
+          <p class="brand-label">BCC</p>
+          <h1 class="brand-title">美容師のインフラ整備サービス</h1>
+        </div>
+      </div>
 
-  <main class="container">
+      <p class="site-lead">
+        開業・集客・運営に必要な“外部パートナー/サービス”を、カテゴリ別にまとめて探せます。<br>
+        料金や細かな内容は、公式LINEから気軽に質問できます。
+      </p>
 
-    <h1 class="title">BCC｜美容師のためのインフラ整備サービス</h1>
-    <p class="subtitle">
-      Beauty Cooperative Chain（BCC）は、美容師・美容室経営を支える総合サポートネットワークです。
-    </p>
+      <!-- LINE CTA -->
+      <div class="line-cta">
+        <div class="line-cta-text">
+          <p class="line-cta-title">BCC公式LINE</p>
+          <p class="line-cta-sub">登録して「自分に必要な項目」を診断 → 最短で相談へ</p>
+          <ul class="line-cta-points">
+            <li>料金・導入条件の確認</li>
+            <li>開業/集客/運営の相談</li>
+            <li>おすすめサービスの提案</li>
+          </ul>
+        </div>
+        <a class="line-cta-btn" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener noreferrer">
+          公式LINEに登録する
+        </a>
+        <p class="line-cta-note">※上のURL（https://lin.ee/XXXXXXX）を、BCCのLINEに差し替えてください</p>
+      </div>
 
-    <!-- コンテンツ画像（後で差し替えOK） -->
-    <div class="image-box">
-      コンテンツイメージ画像
+      <!-- カテゴリナビ -->
+      <nav class="category-nav">
+        <div id="category-nav" class="category-nav-inner"></div>
+      </nav>
     </div>
+  </header>
 
-    <div class="description">
-      BCCは、美容師・美容室が抱える「開業・集客・教育・経営」の課題を、  
-      各分野の専門パートナーと連携して支援するインフラ整備サービスです。
-
-      <ul>
-        <li>0円開業・融資・事業計画などの開業支援</li>
-        <li>美容室専門の不動産・内装業者紹介</li>
-        <li>財務・税務・保険・材料仕入れのサポート</li>
-        <li>教育・人材育成・採用支援</li>
-        <li>HotPepper・Google・SNS・TikTokなどの集客支援</li>
-        <li>予約・キャンセル対策などの運営支援</li>
-      </ul>
-
-      必要なサービスを、必要なタイミングで。  
-      美容師が本業に集中できる環境づくりをBCCが支えます。
-    </div>
-
-    <div class="cta">
-      <a href="【Notionまたは公式LINEのURLをここに】" target="_blank" rel="noopener">
-        詳細・お問い合わせはこちら
-      </a>
-    </div>
-
-    <footer>
-      © 株式会社R・I・V・E
-    </footer>
-
+  <main class="site-main">
+    <div id="catalog"></div>
   </main>
 
+  <footer class="site-footer">
+    <p>© 株式会社R・I・V・E</p>
+  </footer>
+
+  <script>
+    /**
+     * BCC サービス一覧（PDFから抽出）
+     * detailUrl は、Notion/サイト/LPなどの詳細URLが確定したら差し替えください
+     * logo は assets/services/ に画像を置いて差し替え（png推奨）
+     */
+    const services = [
+      // 開業支援
+      { id:"salon-start", cat:"開業支援", name:"Salon Start（0円開業）", desc:"0円開業の導線設計。融資・事業計画などの相談に対応。", logo:"assets/services/salon-start.png", detailUrl:"#"},
+      { id:"next-beauty-tech", cat:"開業支援", name:"NEXT BEAUTY TECH", desc:"融資・事業計画の相談サポート。", logo:"assets/services/next-beauty-tech.png", detailUrl:"#"},
+      { id:"stylebase", cat:"開業支援", name:"StyleBase 開業支援", desc:"開業準備〜運営の立ち上げ支援。", logo:"assets/services/stylebase.png", detailUrl:"#"},
+      { id:"mutas", cat:"開業支援", name:"ムータス（不動産専属 事業提携）", desc:"開業に関わる不動産領域の事業提携。", logo:"assets/services/mutas.png", detailUrl:"#"},
+      { id:"tonari-seminar", cat:"開業支援", name:"隣店セミナー講師紹介", desc:"セミナー講師の紹介・マッチング。", logo:"assets/services/tonari-seminar.png", detailUrl:"#"},
+      { id:"plum-plan", cat:"開業支援", name:"PLUM PLAN", desc:"開業や運営の設計支援（プランニング）。", logo:"assets/services/plum-plan.png", detailUrl:"#"},
+
+
+      // 不動産
+      { id:"real-estate-salon", cat:"不動産", name:"美容室専門の不動産屋", desc:"テナント・居抜き・M&Aまで美容室特化で対応。", logo:"assets/services/real-estate.png", detailUrl:"#"},
+
+
+      // 内装業者
+      { id:"layer-design-works", cat:"内装業者", name:"Layer Design Works", desc:"内装業界最安値クラスを目指す施工パートナー。", logo:"assets/services/layer-design-works.png", detailUrl:"#"},
+      { id:"sunny-side-life", cat:"内装業者", name:"SUNNY SIDE LIFE", desc:"内装・空間づくりの相談先。", logo:"assets/services/sunny-side-life.png", detailUrl:"#"},
+
+
+      // 財務
+      { id:"imamura-fp", cat:"財務", name:"元国税調査官 今村FP", desc:"税務調査対策×保険（財務面の守りを強化）。", logo:"assets/services/imamura-fp.png", detailUrl:"#"},
+
+
+      // 材料
+      { id:"drive-blue", cat:"材料", name:"ドライブブルー", desc:"材料（仕入れ）の紹介・相談。", logo:"assets/services/drive-blue.png", detailUrl:"#"},
+
+
+      // 販売
+      { id:"hairstyle-market", cat:"ヘアスタイル販売", name:"ヘアスタイル販売サイト", desc:"ヘアスタイルの販売プラットフォーム。", logo:"assets/services/hairstyle-market.png", detailUrl:"#"},
+
+
+      // 教育
+      { id:"haircamp", cat:"教育", name:"ヘアキャンプスクール", desc:"学びを継続しやすい教育プログラム。", logo:"assets/services/haircamp.png", detailUrl:"#"},
+      { id:"toko", cat:"教育", name:"企業向け 人材育成・採用支援（都甲）", desc:"育成と採用の仕組み化を支援。", logo:"assets/services/toko.png", detailUrl:"#"},
+
+
+      // 集客
+      { id:"atsukyakumania", cat:"集客", name:"集客マニア", desc:"ホットペッパー・Google（MEO/SEO）などの集客支援。", logo:"assets/services/atsukyakumania.png", detailUrl:"#"},
+      { id:"ones", cat:"集客", name:"ONE’s流 集客サポート", desc:"ホットペッパー・ミニモ中心の集客支援。", logo:"assets/services/ones.png", detailUrl:"#"},
+      { id:"stylepost", cat:"集客", name:"スタイルポスト", desc:"ホットペッパースタイル/ブログの自動化サポート。", logo:"assets/services/stylepost.png", detailUrl:"#"},
+      { id:"freed", cat:"集客", name:"フリード（TikTok）", desc:"TikTokのコンサル・運用代行。", logo:"assets/services/freed.png", detailUrl:"#"},
+      { id:"instagram", cat:"集客", name:"Instagram コンサル＆運用代行", desc:"Instagramの設計〜運用までサポート。", logo:"assets/services/instagram.png", detailUrl:"#"},
+      { id:"biyoushijuku", cat:"集客", name:"美容師塾", desc:"人間力・美容師力のコンサル支援。", logo:"assets/services/biyoushijuku.png", detailUrl:"#"},
+      { id:"gita", cat:"集客", name:"美容室専門 TikTokコンサル（ギータ）", desc:"美容室特化のTikTok戦略支援。", logo:"assets/services/gita.png", detailUrl:"#"},
+      { id:"tete-lab", cat:"集客", name:"TETE LAB", desc:"HPB完全攻略 / WEB集客の支援。", logo:"assets/services/tete-lab.png", detailUrl:"#"},
+
+
+      // 予約サービス
+      { id:"refundhub", cat:"予約サービス", name:"RefundHub", desc:"キャンセル請求・再予約の導線づくり。", logo:"assets/services/refundhub.png", detailUrl:"#"},
+    ];
+
+    // カテゴリ順（表示順を固定したいので）
+    const categoryOrder = ["開業支援","不動産","内装業者","財務","材料","ヘアスタイル販売","教育","集客","予約サービス"];
+
+    // カテゴリ→アンカー
+    const anchorIdByCategory = Object.fromEntries(categoryOrder.map(c => [c, "cat-" + c]));
+
+    function render() {
+      const catalog = document.getElementById("catalog");
+      const nav = document.getElementById("category-nav");
+      catalog.innerHTML = "";
+      nav.innerHTML = "";
+
+      categoryOrder.forEach(cat => {
+        const items = services.filter(s => s.cat === cat);
+        const anchorId = anchorIdByCategory[cat];
+
+        // ナビ（件数表示）
+        const navItem = document.createElement("a");
+        navItem.href = "#" + anchorId;
+        navItem.className = "category-nav-item";
+        navItem.textContent = `${cat}（${items.length}件）`;
+        navItem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.getElementById(anchorId)?.scrollIntoView({ behavior:"smooth", block:"start" });
+        });
+        nav.appendChild(navItem);
+
+        // セクション
+        const section = document.createElement("section");
+        section.className = "category-section";
+        section.id = anchorId;
+
+        const h2 = document.createElement("h2");
+        h2.className = "category-title";
+        h2.textContent = cat;
+
+        const count = document.createElement("span");
+        count.className = "category-count";
+        count.textContent = `（${items.length}件）`;
+        h2.appendChild(count);
+
+        const grid = document.createElement("div");
+        grid.className = "service-grid";
+
+        items.forEach(s => {
+          const card = document.createElement("div");
+          card.className = "service-card";
+
+          const left = document.createElement("div");
+          left.className = "service-left";
+
+          const img = document.createElement("img");
+          img.className = "service-logo";
+          img.src = s.logo;
+          img.alt = s.name;
+
+          left.appendChild(img);
+
+          const right = document.createElement("div");
+          right.className = "service-right";
+
+          const name = document.createElement("h3");
+          name.className = "service-name";
+          name.textContent = s.name;
+
+          const desc = document.createElement("p");
+          desc.className = "service-desc";
+          desc.textContent = s.desc;
+
+          const btnRow = document.createElement("div");
+          btnRow.className = "service-actions";
+
+          const detail = document.createElement("a");
+          detail.className = "btn btn-primary";
+          detail.href = s.detailUrl || "#";
+          detail.target = "_blank";
+          detail.rel = "noopener noreferrer";
+          detail.textContent = "詳細 / お問い合わせはこちら";
+
+          btnRow.appendChild(detail);
+
+          right.appendChild(name);
+          right.appendChild(desc);
+          right.appendChild(btnRow);
+
+          card.appendChild(left);
+          card.appendChild(right);
+
+          grid.appendChild(card);
+        });
+
+        section.appendChild(h2);
+        section.appendChild(grid);
+        catalog.appendChild(section);
+      });
+    }
+
+    render();
+  </script>
 </body>
 </html>
