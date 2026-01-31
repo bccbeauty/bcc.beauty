@@ -272,3 +272,61 @@ img{ max-width:100%; display:block; }
     height: 64px;
   }
 }
+/* =========================================
+   BCC 最終上書き（ここから下だけ追加）
+   目的：
+   1) サービス一覧は常に2カラム（スマホでも2列）
+   2) LINE/オープンチャットは2列をやめて縦並び
+========================================= */
+
+/* 1) サービス一覧：スマホでも2列固定 */
+@media (max-width: 860px){
+  /* 既存で 1fr にしてるのを上書き */
+  .service-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  /* 2列時にカードが横並びだと窮屈なので縦積みにする */
+  .service-card{
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 10px !important;
+    padding: 12px !important;
+  }
+
+  .service-right{
+    align-items: center !important;
+  }
+
+  .service-actions{
+    justify-content: center !important;
+  }
+
+  .service-logo{
+    width: 64px !important;
+    height: 64px !important;
+  }
+}
+
+/* 2) LINE / オープンチャット：2列やめて縦並び固定 */
+.cta-row{
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+/* 横スクロール化してた設定も無効化（念押し） */
+@media (max-width: 720px){
+  .cta-row{
+    grid-auto-flow: initial !important;
+    grid-auto-columns: initial !important;
+    overflow-x: visible !important;
+    scroll-snap-type: none !important;
+    padding-bottom: 0 !important;
+  }
+  .cta-card{
+    scroll-snap-align: initial !important;
+  }
+}
